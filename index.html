@@ -7,27 +7,32 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-950 text-gray-100 flex flex-col items-center justify-center min-h-screen px-4">
-  <div class="text-center space-y-6 max-w-xl">
+  <div class="text-center space-y-6 max-w-xl w-full">
     <h1 class="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
       OngatePay — Coming Soon 🚀
     </h1>
+
     <p class="text-lg text-gray-400">
       Borderless, No-KYC crypto payment gateway designed for freedom and global trade.<br/>
       Merchant Wallets • Smart Invoices • Bulk Transfers
     </p>
 
-    <div class="mt-6">
-      <input type="email" placeholder="Enter your email" 
-        class="px-4 py-3 w-64 rounded-l-xl focus:outline-none text-gray-900"
+    <!-- Fixed form alignment -->
+    <form class="mt-6 flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-0">
+      <input 
+        type="email" 
+        placeholder="Enter your email" 
+        class="px-4 py-3 w-full sm:w-64 rounded-xl sm:rounded-l-xl sm:rounded-r-none focus:outline-none text-gray-900"
       />
-      <button class="bg-gradient-to-r from-cyan-500 to-blue-600 px-5 py-3 rounded-r-xl font-semibold hover:opacity-90">
+      <button 
+        type="submit"
+        class="bg-gradient-to-r from-cyan-500 to-blue-600 px-5 py-3 w-full sm:w-auto rounded-xl sm:rounded-r-xl sm:rounded-l-none font-semibold hover:opacity-90 transition"
+      >
         Notify Me
       </button>
-    </div>
+    </form>
 
-    <div class="mt-10">
-      <p class="text-sm text-gray-500">© 2025 OngatePay. Built for Decentralized Commerce.</p>
-    </div>
+    <p class="text-sm text-gray-500 mt-10">© 2025 OngatePay. Built for Decentralized Commerce.</p>
   </div>
 </body>
 </html>
